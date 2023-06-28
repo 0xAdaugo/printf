@@ -15,7 +15,7 @@ int print_hex(va_list l, flags_t *f)
 
 	if (f->hash == 1 && string[0] != '0')
 		o += _puts("0x");
-	count += _puts(string);
+	o += _puts(string);
 	return (o);
 }
 
@@ -34,7 +34,7 @@ int print_hex_big(va_list l, flags_t *f)
 
 	if (f->hash == 1 && string[0] != '0')
 		o += _puts("0X");
-	count += _puts(string);
+	o += _puts(string);
 	return (o);
 }
 

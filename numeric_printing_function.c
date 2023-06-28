@@ -10,7 +10,7 @@
 int print_int(va_list l, flags_t *f)
 {
 	int s = va_arg(l, int);
-	int result = count_digit(n);
+	int result = count_digit(s);
 
 	if (f->space == 1 && f->plus == 0 && s >= 0)
 		result += _putchar(' ');

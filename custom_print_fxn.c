@@ -23,7 +23,7 @@ int print_bigS(va_list l, flags_t *f)
 	{
 		if (s[a] > 0 && (s[a] < 32 || s[a] >= 127))
 		{
-			_puts("\x");
+			_puts("\\x");
 			o += 2;
 			result = convert(s[a], 16, 0);
 			if (!result[1])
