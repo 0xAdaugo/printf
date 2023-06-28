@@ -93,7 +93,7 @@ int print_rot13(va_list l, flags_t *f)
 	return (a);
 }
 
-/***
+/**
  * print_percent - Fxn that prints a percent symbol
  * @l: List arguments from _printf
  * @f: Pointer to the struct flags in which we on the flags
